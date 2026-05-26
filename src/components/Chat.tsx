@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Chat.module.css';
 
 const SUGGESTED_PROMPTS = [
-  "Why is Diba a good fit for MapleSpark?",
-  "What has she built from scratch?",
-  "What are her full-stack skills?",
-  "Tell me about her recent projects"
+  "What kind of developer is Diba?",
+  "Tell me about her work at The Fly Bottle",
+  "Which projects best show her skills?",
+  "How can I contact or view her work?"
 ];
 
 export default function Chat() {
@@ -19,7 +19,7 @@ export default function Chat() {
       {
         id: '1',
         role: 'assistant',
-        parts: [{ type: 'text', text: "Hi MapleSpark team 👋 — I'm an interactive assistant for Diba Makki. Feel free to ask anything about her experience, projects, or fit for your team." }]
+        parts: [{ type: 'text', text: "Hi, I'm an interactive assistant for Diba Makki. Feel free to ask anything about her experience, projects, or fit for your team." }]
       }
     ] as UIMessage[]
   });
